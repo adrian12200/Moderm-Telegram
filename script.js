@@ -22,7 +22,7 @@ const typeEffect = () => {
 
     if(charIndex < currentWord.length){
         charIndex++;
-        setTimeout(typeEffect, 30);
+        setTimeout(typeEffect, 20);
     }else if(charIndex >= currentWord.length){
         wordIndex = (wordIndex + 1) % words.length;
         elementIndex = (elementIndex + 1) % elements.length;
@@ -30,7 +30,7 @@ const typeEffect = () => {
         if (wordIndex === 0 && elementIndex === 0) {
             return; // Stop the typing effect
         }
-        setTimeout(typeEffect, 30);
+        setTimeout(typeEffect, 20);
     }
 }
 
