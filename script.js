@@ -22,7 +22,7 @@ const typeEffect = () => {
 
     if(charIndex < currentWord.length){
         charIndex++;
-        setTimeout(typeEffect, 1);
+        setTimeout(typeEffect, 30);
     }else if(charIndex >= currentWord.length){
         wordIndex = (wordIndex + 1) % words.length;
         elementIndex = (elementIndex + 1) % elements.length;
