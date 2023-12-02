@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-image: url("bg.png");
+    background-size: contain;
+    min-height: 500px; 
+}
+
+/* .container{
+    background-image: url("bg.png");
+    background-size: contain;
+    min-height: 850px;
+} */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.header img{
+    width: 90%;
+    height: 100px;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.header h1{
+    font-size: 1.7rem;
+    z-index: 999;
+    font-family: 'Bungee Shade', sans-serif;
+}
+
+#angel{
+    font-size: 3.7rem;
+    z-index: 999;
+    font-family: 'MonteCarlo';
+    color: rgb(255, 53, 188);
+}
+
+.letter_container{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.column{
+    width: 10%;
+}
+
+.letter{
+    margin-top: 10px;
+    width: 90%;
+    border: 2px solid black;
+    background-image: linear-gradient(rgba(224, 201, 166, 0.9),rgb(131, 72, 121));
+    border-radius: 10px 10px;
+    padding: 20px 20px;
+    font-family: 'Cambo', serif;
+    font-size: small;
+    line-height: 1.6;
+}   
+
+.letter p{
+    text-indent: 30px;
+}
+
+/* for tablet portrait, 600px and up */
+@media screen and (min-width: 600px){
+    .header img{
+        width: 90%;
+        height: 140px;
+    }
+    
+    .header h1{
+        font-size: 3rem;
+    }
+    
+    #angel{
+        font-size: 5.7rem;
+    }
+
+    .letter{
+        font-size: large;
+    }
+
+    .container{
+        height: 100%;
+    }
+}
+
+/* for tablet landscape, 768px and up*/
+@media screen and (min-width: 768px){
+    .header img{
+        width: 90%;
+        height: 140px;
+    }
+    
+    .header h1{
+        font-size: 4rem;
+    }
+    
+    #angel{
+        font-size: 6.7rem;
+    }
+
+    .letter{
+        font-size: larger;
+    }
+
+    .container{
+        height: 100vh;
+    }
+}
+
+/* for large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px){
+    .header img{
+        width: 48%;
+        height: 140px;
+    }
+    
+    .header h1{
+        font-size: 4rem;
+    }
+    
+    #angel{
+        font-size: 7rem;
+    }
+
+    .letter{
+        font-size: larger;
+    }
+
+    .container{
+        height: 100vh;
+    }
+}
+
+/* first page (signup) */
+.signup{
+    border: solid 2px black;
+    height: 400px;
+    padding: 20px;
+    font-family: 'Cambo', serif;
+    width: 80%;
+    margin: 220px auto;
+    background-image: linear-gradient(rgba(224, 201, 166, 0.9),rgb(131, 72, 121));
+    border-radius: 10px 10px;
+}
+
+.signup h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    padding: 10px;          
+    font-size: 16px;         
+    border: 2px solid #ccc;  
+    border-radius: 5px;      
+    box-sizing: border-box;  
+    outline: none; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#register{
+    padding: 10px;          
+    font-size: 18px;         
+    border: 2px solid #ccc;  
+    border-radius: 5px;      
+    box-sizing: border-box;  
+    outline: none; 
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Cambo', serif;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+/* second page (notification)*/
+.greetings{
+    border: solid 2px black;
+    height: 350px;
+    padding: 20px;
+    font-family: 'Cambo', serif;
+    width: 80%;
+    margin: 220px auto;
+    background-image: linear-gradient(rgba(224, 201, 166, 0.9),rgb(131, 72, 121));
+    border-radius: 10px 10px;
+    line-height: 1.6;
+}
+
+/* h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+h1 span{
+    position: relative;
+    color: #4070f4;
+}
+
+h1 span::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -8px;
+    height: 30px;
+    width: 2px;
+    background: #4070f4;
+    transform: translate(-45%);
+    animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before{
+    animation: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    
+} */

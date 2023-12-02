@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cambo&family=MonteCarlo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Announcement</title>
+</head>
+<body>
+    <div class="greetings" id="mainDiv">
+        <h1 id="greet"></h1><br>
+        <h3 id="msg">Looks like today is your birthday, Happy Birthday!</h3><br>
+        <h3>You have one new message from my creator:</h3><br>
+        <a href="messages.html" id="register">Tap to open message</a>
+    </div>
+    <div class="greetings" id="conditionalContent">
+        <!-- Content to show if conditions are not met -->
+        <h1 id="greet1"></h1><br>
+        <h3 id="msg">What are you doing here?</h3><br>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            const userName = params.get('name');
+            const outputText = document.getElementById("greet");
+            const outputText1 = document.getElementById("greet1");
+            const conditionalDiv = document.getElementById("conditionalContent");
+            const mainDiv = document.getElementById("mainDiv")
+
+            if(userName == "angel" || userName == "angel heart") {
+                // If conditions are not met, display the alternative content
+                conditionalContent.style.display = "none";
+                outputText.textContent = "Hello, " + userName + "!";
+                // You can also modify the content of the alternative content here
+            } else {
+                // If conditions are met, hide the alternative content
+                outputText1.textContent = "Hello, " + userName + "!";
+                conditionalContent.style.display = "block";
+                conditionalContent.style.height = "160px";
+                mainDiv.style.display = "none";
+                // Continue with the original conten
+            }
+        });
+    </script>
+</body>
+</html>
